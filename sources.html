@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MDS</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+	</head>
+	<body>
+		<header>
+			<h1>
+				<img src="Envelope.png" alt="Envelope" height="35" width="50"/>
+				&nbsp;
+				<span style="text-decoration: underline;">
+					MAIL DELIVERY SIMULATOR
+				</span>
+				&nbsp;
+				<img src="Envelope.png" alt="Envelope" height="35" width="50"/>
+			</h1>
+			<h2>An Experience Created for CSC 215</h2>
+			<p>
+				<a href="index.html">Home</a> 
+				&nbsp; | &nbsp; 
+				<a href="https://www.usps.com/">USPS</a>
+				&nbsp; | &nbsp; 
+				<a href="sources.html">Image Sources</a>
+			</p>
+		</header>
+		<div>
+			<table style="margin: 0px auto; text-align: center;">
+				<tr>
+					<th>Source</th>
+					<th></th>
+					<th>URL</th>
+				</tr>
+				<tr>
+					<td>Clip Art Kid</td>
+					<td>-</td>
+					<td><a href="http://www.clipartkid.com">ClipArtKid.com</a></td>
+				</tr>
+				<tr>
+					<td>Clip Art Panda</td>
+					<td>-</td>
+					<td><a href="http://www.clipartpanda.com/">ClipArtPanda.com</a></td>
+				</tr>
+				<tr>
+					<td>Clip Art PNG</td>
+					<td>-</td>
+					<td><a href="http://clipartpng.com/"ClipArtPNG.com>ClipArtPNG.com</a></td>
+				</tr>
+			</table>
+		</div>
+		<br />
+		<footer>
+			Created by: Chris Armstrong
+			<br />
+			Class: CSC 215
+			<br />
+			Due: 7:00PM EST, May 10, 2017
+			<br />
+			<a href="mailto:email@isp.com?Subject=Subject&Body=Message%20Text">
+				Contact
+			</a>
+		</footer>
+		<script>
+			var answers = [false, false, true, true, false, true, false, true, true, false];
+			function btnClick()
+			{
+				for (i = 0; i < 10; i++)
+				{
+					var checkboxId = "i" + i;
+					var checkBox = document.getElementById(checkboxId);
+					checkBox.disabled = true;
+					if (checkBox.checked != answers[i])
+					{
+						var answerId = "r" + i;
+						var answer = document.getElementById(answerId);
+						answer.style.color = "red";
+						answer.innerHTML = "Incorrect!";
+					}
+					document.getElementById("answerDiv").style.visibility = "visible";
+					document.getElementById("submitBtn").style.visibility = "hidden";
+				}
+			}
+		</script>
+	</body>
+</html>

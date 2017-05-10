@@ -1,0 +1,27 @@
+body {
+	color: #02182B;
+}
+
+header, footer {
+	text-align: center;
+}
+
+a:link, a:visited {
+	color: #02182B;
+}
+
+a:hover, a:active {
+	color: #D7263D;
+}
+
+h1 {
+	color: #D7263D;
+}
+
+h2 {
+	color: #0197F6;
+}
+
+h3 {
+	color: #D7263D;
+}
